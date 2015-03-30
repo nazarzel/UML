@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<activityRootModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="b939bccf-f368-4046-b03b-8f77ac427205" name="Activity1" linkedPackageId="c2e58a1e-c872-425a-a4f3-c32d56716f1a" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="d0737455-0590-46d1-962d-f6ee4c0fd08a">
+      <profileInstance Id="14769c91-b4bb-4d5a-b50a-6cefa538ecc7" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="2ec73d7a-e822-4140-8940-b68262b330dd">
+      <profileInstance Id="e8b5efbf-723e-4cd6-92c7-8eb020d5eb95" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <activityRootModelHasActivity>
+      <activity Id="cefeaf5c-5c68-4cd7-ae61-167da58cb28d" name="Activity1" isAbstract="false" isLeaf="false" isActiveClass="false" isReentrant="false" isReadOnly="false" isSingleExecution="false">
+        <elementDefinition Id="0f0244c0-d5dc-46c9-8e2d-68f6cd8375fa" />
+        <nodes>
+          <initialNode Id="9999fd1c-9367-4712-b9fb-a92e24cb3f8c" name="Initial1" isLeaf="false">
+            <elementDefinition Id="ee2b8e9e-4c2f-4efb-ac62-28eef942aad4" />
+            <flowNodeTargets>
+              <controlFlow Id="5c78e912-b1ec-4ebd-a70a-e4217de992e3" isLeaf="false">
+                <opaqueActionMoniker Id="7219fd74-bd58-4a17-a214-e99ff9f5e38c" LastKnownName="отримання усіх потрібних данних" />
+                <elementDefinition Id="dd799807-aebd-4379-a1f0-bfa298cd6369" />
+              </controlFlow>
+            </flowNodeTargets>
+          </initialNode>
+          <opaqueAction Id="7219fd74-bd58-4a17-a214-e99ff9f5e38c" name="отримання усіх потрібних данних" isLeaf="false">
+            <elementDefinition Id="72d40b6f-e624-4d78-85ed-8d1b253ae630" />
+            <objectFlowTargets>
+              <objectFlow Id="055306b6-a02c-4c3d-80a8-d11e4ade61ba" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="5b0fb3db-3001-44b6-b444-ab1a0b3fd275" LastKnownName="данні" />
+                <elementDefinition Id="34b76881-5685-4dcc-9b6d-2d7973a0b459" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="b0bd3ee7-7715-4ef7-9eb5-f33afd42f94d" name="ввід капчі" isLeaf="false">
+            <elementDefinition Id="9bb2057e-e92b-4b55-9e59-bd73c128ad62" />
+            <objectFlowTargets>
+              <objectFlow Id="8c9d1c4f-287a-458e-bee2-e565d6f2593c" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="4dec0d11-5ab3-4d77-837f-c26a475eadac" LastKnownName="введена капча" />
+                <elementDefinition Id="8156a309-a123-499f-8c72-326197de01d9" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <opaqueAction Id="692a0289-f2bc-41dc-be33-1ab8ac5fa71c" name="перевірка капчі " isLeaf="false">
+            <elementDefinition Id="e3cddda5-a5ae-417b-b468-a5c8f3f8a0fb" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="4dec0d11-5ab3-4d77-837f-c26a475eadac" name="введена капча" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="4c743691-fbf7-4e95-8599-fa98635550a5" />
+                  <upperBound>
+                    <literalInteger Id="80c795cc-37ce-4a75-a3a1-f214a0d651bf" name="2147483647" value="2147483647">
+                      <elementDefinition Id="7ec10287-0409-404a-bb72-543338f588f6" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="47b3dc9c-dce1-4661-a8bf-74ccb53f4867" name="true or false" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="1672edca-a842-4a51-9233-32c386af8102" />
+                  <objectFlowTargets>
+                    <objectFlow Id="138d1240-5616-46bf-94be-d1eb83b5fcd7" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <decisionNodeMoniker Id="31c14779-d143-4c17-8fe5-da21b32f6a1c" LastKnownName="Decision1" />
+                      <elementDefinition Id="e89cb99c-e0bc-4871-af92-b4b1a1820a7e" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="975b68a6-b67f-4b33-8545-13eb95ada2e1" name="2147483647" value="2147483647">
+                      <elementDefinition Id="28f82200-610a-4574-8080-3c04adb29d57" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <opaqueAction Id="02cd41a1-aca4-4a8d-b5de-614475cac370" name="відправка смс на телефон" isLeaf="false">
+            <elementDefinition Id="6124fc43-9c4a-4aa2-b876-598e40c65f81" />
+            <objectFlowTargets>
+              <objectFlow Id="30fb59a8-a185-4b4b-8f7e-03e39ee0c692" isLeaf="false" isMulticast="false" isMultireceive="false">
+                <inputPinMoniker Id="cbb79e15-fc3b-4820-9104-6a4d4cd27274" LastKnownName="текст смс з бази" />
+                <elementDefinition Id="e4809315-d27f-488b-9586-200cd7c097cc" />
+              </objectFlow>
+            </objectFlowTargets>
+          </opaqueAction>
+          <decisionNode Id="31c14779-d143-4c17-8fe5-da21b32f6a1c" name="Decision1" isLeaf="false">
+            <elementDefinition Id="0c62cb51-54f0-4b9a-a265-e5d924744d94" />
+            <flowNodeTargets>
+              <controlFlow Id="2df8965e-5381-45b0-b332-d7070c3c6ab9" guard="false" name="false" isLeaf="false">
+                <opaqueActionMoniker Id="b0bd3ee7-7715-4ef7-9eb5-f33afd42f94d" LastKnownName="ввід капчі" />
+                <elementDefinition Id="44251b0c-7bb8-4a22-b2dc-29bf2b26948a" />
+              </controlFlow>
+              <controlFlow Id="84e60ecb-436b-4879-88c2-f421a19dfce8" guard="true" isLeaf="false">
+                <opaqueActionMoniker Id="ed329072-85ff-49ae-8910-d01fe1da1036" LastKnownName="отримання номеру телефону, або його відсутності" />
+                <elementDefinition Id="7afb9d6f-a932-462e-adf1-ab891ec22406" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="27031db4-66e2-4528-92cf-f6c750682ff1" name="перевірка смс" isLeaf="false">
+            <elementDefinition Id="8d6033c2-2392-4c5c-aec7-1254c53b8709" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="cbb79e15-fc3b-4820-9104-6a4d4cd27274" name="текст смс з бази" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="568a8c7e-2784-4154-9b10-feb00fff787a" />
+                  <upperBound>
+                    <literalInteger Id="851a1e50-9a42-4213-9d78-4d06fb8beb2a" name="2147483647" value="2147483647">
+                      <elementDefinition Id="bb76c9f9-506e-4017-9bfc-fe3096926d7c" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="2b0dcb34-59e4-4427-9acd-43966569ba3e" name="true or false" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="0897be69-7863-4244-bc73-5d2fcf077137" />
+                  <objectFlowTargets>
+                    <objectFlow Id="0425a459-a135-460a-9fb9-05364dfa0129" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <decisionNodeMoniker Id="8bd6ce1e-8ffc-46de-9aa8-f7aeef05232f" LastKnownName="Decision2" />
+                      <elementDefinition Id="2e23c17d-f6ff-4bad-881c-e40f8e40c3ed" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="48adbad7-e9a4-404e-a14f-56342bd72485" name="2147483647" value="2147483647">
+                      <elementDefinition Id="7dd66088-96e3-4b96-9db2-8ea996bd908f" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="8bd6ce1e-8ffc-46de-9aa8-f7aeef05232f" name="Decision2" isLeaf="false">
+            <elementDefinition Id="37501d35-5a3e-430f-bcfb-c97dae243264" />
+            <flowNodeTargets>
+              <controlFlow Id="0e11e37b-90d2-45dc-a69f-b919bf99dae4" guard="false" isLeaf="false">
+                <opaqueActionMoniker Id="02cd41a1-aca4-4a8d-b5de-614475cac370" LastKnownName="відправка смс на телефон" />
+                <elementDefinition Id="aceba5bb-de74-452e-94be-e17325b0765c" />
+              </controlFlow>
+              <controlFlow Id="37306426-c9f0-4784-ba10-d27d01bcf637" guard="true" isLeaf="false">
+                <joinNodeMoniker Id="3071e511-777d-4cd2-9d10-429be601b10b" LastKnownName="Join1" />
+                <elementDefinition Id="a8304619-0589-4d0a-932b-846bed15db1f" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="d398b7a6-1e2c-474e-bbaa-a5159f8cd7bb" name="перевірка данних" isLeaf="false">
+            <elementDefinition Id="2240eef9-2cb4-4327-a2ab-04f59956c58b" />
+            <pins>
+              <opaqueActionHasInputValues>
+                <inputPin Id="5b0fb3db-3001-44b6-b444-ab1a0b3fd275" name="данні" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="ec21d142-298d-4c4f-946e-d45bda76ec49" />
+                  <upperBound>
+                    <literalInteger Id="4848d0cd-a208-4dd5-85a5-624304759ab5" name="2147483647" value="2147483647">
+                      <elementDefinition Id="4edab84f-e0c9-4bdf-a665-a006f0f9543a" />
+                    </literalInteger>
+                  </upperBound>
+                </inputPin>
+              </opaqueActionHasInputValues>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="89223934-b4a4-418c-b2f0-cdd9ea45160b" name="correct or incorrect" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="1390ae6e-168a-495c-861b-326457725108" />
+                  <objectFlowTargets>
+                    <objectFlow Id="fc29c3e4-a965-41ee-861d-449e8040e127" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <decisionNodeMoniker Id="865c9120-e663-48b7-9816-9c533686db6a" LastKnownName="Decision3" />
+                      <elementDefinition Id="7199d8b5-751b-43fe-ae28-02e85d1709e9" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="139b2d8b-78da-4934-95d9-207f1f2d65aa" name="2147483647" value="2147483647">
+                      <elementDefinition Id="1c931abf-1e68-4d87-9717-e2640a7d9baa" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="865c9120-e663-48b7-9816-9c533686db6a" name="Decision3" isLeaf="false">
+            <elementDefinition Id="91da406d-67f9-4839-b709-cb0af0bb37e0" />
+            <flowNodeTargets>
+              <controlFlow Id="3a63c460-dfc2-425d-917f-36614cc38f19" guard="correct" isLeaf="false">
+                <opaqueActionMoniker Id="b0bd3ee7-7715-4ef7-9eb5-f33afd42f94d" LastKnownName="ввід капчі" />
+                <elementDefinition Id="48fbe305-8f23-4a2a-9e51-02808b9fa930" />
+              </controlFlow>
+              <controlFlow Id="2bf9ea80-d9b2-4c46-8be0-0e9d1ffdf432" guard="incorrect" name="incorrect" isLeaf="false">
+                <opaqueActionMoniker Id="7219fd74-bd58-4a17-a214-e99ff9f5e38c" LastKnownName="отримання усіх потрібних данних" />
+                <elementDefinition Id="a7a6bb1c-ba53-4979-8003-ae2503664794" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <opaqueAction Id="a0938ed9-0528-42bf-b1d6-1723df788e92" name="запис аккаунту у базу данних" isLeaf="false">
+            <elementDefinition Id="157c0adc-c8f7-43d6-b183-14bc4f89c50e" />
+            <flowNodeTargets>
+              <controlFlow Id="77d9d15a-0574-4824-9017-15d06a021aee" isLeaf="false">
+                <activityFinalNodeMoniker Id="b9c7e6d7-23cf-4699-b8f1-9c9741ab5a9d" LastKnownName="ActivityFinal1" />
+                <elementDefinition Id="f54b7bfb-15c9-418b-8ec7-f3133ac34def" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+          <activityFinalNode Id="b9c7e6d7-23cf-4699-b8f1-9c9741ab5a9d" name="ActivityFinal1" isLeaf="false">
+            <elementDefinition Id="ad0f7065-a687-4a79-a569-0162c4328a95" />
+          </activityFinalNode>
+          <opaqueAction Id="ed329072-85ff-49ae-8910-d01fe1da1036" name="отримання номеру телефону, або його відсутності" isLeaf="false">
+            <elementDefinition Id="a3f6ef15-c4f4-4616-b7d5-083718d6a372" />
+            <pins>
+              <opaqueActionHasOutputValues>
+                <outputPin Id="bdeb75aa-9a37-4c29-a480-ceebcab3a2a6" name="результат" isLeaf="false" ordering="Unordered" isControlType="false" isControl="false">
+                  <elementDefinition Id="605b5fa0-89ea-4c23-aca5-cfc2d45d443c" />
+                  <objectFlowTargets>
+                    <objectFlow Id="78d52018-f567-43cd-9881-149983bb8e35" isLeaf="false" isMulticast="false" isMultireceive="false">
+                      <decisionNodeMoniker Id="5d45e91f-cb65-4fd1-9606-9f2a6758711a" LastKnownName="Decision4" />
+                      <elementDefinition Id="bb5fd211-07ae-4e69-9c8a-eb55638b55f9" />
+                    </objectFlow>
+                  </objectFlowTargets>
+                  <upperBound>
+                    <literalInteger Id="7f2a731a-d12a-4c00-aeca-3eab3c32e2a2" name="2147483647" value="2147483647">
+                      <elementDefinition Id="b4bbbd41-c278-44d8-a2d1-c50ebc9d3bba" />
+                    </literalInteger>
+                  </upperBound>
+                </outputPin>
+              </opaqueActionHasOutputValues>
+            </pins>
+          </opaqueAction>
+          <decisionNode Id="5d45e91f-cb65-4fd1-9606-9f2a6758711a" name="Decision4" isLeaf="false">
+            <elementDefinition Id="54986f4c-3dd3-480d-bf38-124151f52d00" />
+            <flowNodeTargets>
+              <controlFlow Id="7d9ca029-67e1-4967-b0e0-6fca89ca025c" guard="є телефон" isLeaf="false">
+                <opaqueActionMoniker Id="02cd41a1-aca4-4a8d-b5de-614475cac370" LastKnownName="відправка смс на телефон" />
+                <elementDefinition Id="f970c9b3-1672-4cb2-8e3f-6cde5f6c51e2" />
+              </controlFlow>
+              <controlFlow Id="8ae31924-61ad-46da-9b2e-f7b47e9a8140" guard="нема телефону" isLeaf="false">
+                <forkNodeMoniker Id="78854ac1-4f38-44d1-b70f-95c2b1b7b755" LastKnownName="Fork1" />
+                <elementDefinition Id="a6dd2a41-fa1d-4358-b51e-ef2b40aba38c" />
+              </controlFlow>
+            </flowNodeTargets>
+          </decisionNode>
+          <joinNode Id="3071e511-777d-4cd2-9d10-429be601b10b" name="Join1" isLeaf="false">
+            <elementDefinition Id="87fd7d54-df39-4450-aed6-08ce846ab850" />
+            <flowNodeTargets>
+              <controlFlow Id="cb663186-df8e-4179-8d48-58166cf6da48" isLeaf="false">
+                <opaqueActionMoniker Id="a0938ed9-0528-42bf-b1d6-1723df788e92" LastKnownName="запис аккаунту у базу данних" />
+                <elementDefinition Id="5342acbe-307e-4628-bf69-aeaeaec8ed11" />
+              </controlFlow>
+            </flowNodeTargets>
+          </joinNode>
+          <forkNode Id="78854ac1-4f38-44d1-b70f-95c2b1b7b755" name="Fork1" isLeaf="false">
+            <elementDefinition Id="99467a10-68e0-4d47-8501-1073a14076e2" />
+            <flowNodeTargets>
+              <controlFlow Id="10802735-2da2-4478-b035-eba4590f0360" isLeaf="false">
+                <joinNodeMoniker Id="3071e511-777d-4cd2-9d10-429be601b10b" LastKnownName="Join1" />
+                <elementDefinition Id="11e3361f-1d62-410f-bb30-9e2664c75344" />
+              </controlFlow>
+              <controlFlow Id="b4b3e23b-f433-4a1d-937d-10b5905e2a89" isLeaf="false">
+                <opaqueActionMoniker Id="6dbbc0aa-2902-4cbb-a227-18dd768e239b" LastKnownName="секретне питання" />
+                <elementDefinition Id="bfb3a90f-92c4-4d05-9b2c-d1cbf62690c0" />
+              </controlFlow>
+            </flowNodeTargets>
+          </forkNode>
+          <opaqueAction Id="6dbbc0aa-2902-4cbb-a227-18dd768e239b" name="секретне питання" isLeaf="false">
+            <elementDefinition Id="bc955d31-637d-4b1e-86ef-5fb6050ce351" />
+            <flowNodeTargets>
+              <controlFlow Id="ae9f7f08-1450-4796-a743-a44a63ef3095" isLeaf="false">
+                <joinNodeMoniker Id="3071e511-777d-4cd2-9d10-429be601b10b" LastKnownName="Join1" />
+                <elementDefinition Id="7f4afcfb-0be3-47bf-932a-ac8d3b42c861" />
+              </controlFlow>
+            </flowNodeTargets>
+          </opaqueAction>
+        </nodes>
+      </activity>
+    </activityRootModelHasActivity>
+  </packagedElements>
+  <package Id="c2e58a1e-c872-425a-a4f3-c32d56716f1a" name="ModelingProject1">
+    <elementDefinition Id="7c2a265c-d068-488a-bcf7-37576013981f" />
+  </package>
+</activityRootModel>

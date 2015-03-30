@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ebbbf608-b5e9-4f40-ba12-c1eedfc0342a" name="UMLClassDiagram1" linkedPackageId="9438f2c8-c6b9-49cc-b65c-4b26bb5281c6" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="18c964c5-cfb9-44b7-b8f3-9ba8e742899a">
+      <profileInstance Id="6bb85563-a942-48e2-9ed0-a03c72246e14" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="5e45f471-8884-43f0-83d4-de67ef17aa3e">
+      <profileInstance Id="a63ebc94-3c1d-47d9-a9a2-34116f03bcfb" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3a0b3ae6-8d13-48aa-b7b3-706f1d959a04" name="Internet shop" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d4f47a76-af91-482d-a391-8afa85654f91" />
+        <targetEnds>
+          <association Id="b6e862c1-a76f-4e8b-8b96-9a0d2af43f0f" isDerived="false" sourceEndRoleName="Internet shop" targetEndRoleName="Category" isLeaf="false" isAbstract="false">
+            <classMoniker Id="41ac6639-6848-4c3e-90ea-ed86cc5c7a9b" LastKnownName="Category" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ab062d8c-45e9-4806-b679-88f0939aeeb0" name="Internet shop" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="69fa7372-d035-48e3-ad68-7555b1634ddd" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="30bb6aa4-3271-4007-8ba5-09e2a370612e" name="Category" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="5baae28c-ab1b-4355-a0be-ad8b5187d216" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="496ed3cf-c7da-4159-9e31-0ec5103bb424" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="b64ca9b2-6801-4fbb-94d1-36d6052f3569" name="categories" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fc0a2a25-bc1b-4d63-87ff-3d805cdac664" />
+          </property>
+          <property Id="9f9c8f9e-596a-4de8-98ae-c5ebf6f45d7d" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c0cf520b-453b-413e-990b-44f482c4230e" />
+          </property>
+          <property Id="5eba7929-b214-442c-a48a-39a63e28e856" name="cash" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="84d50a06-2d1e-4ce0-832b-790a48363bca" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a1494c54-9999-4bb1-9489-bdc7828d3453" name="showBasket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="625ba949-982d-4adf-a607-5044af2b16b8" />
+          </operation>
+          <operation Id="990eabd7-fbd8-45d4-bf55-906ac90d608e" name="changePaymentSystem" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f8d7f88c-43ea-4804-baf3-2bef9c39807c" />
+          </operation>
+          <operation Id="ecb718ad-0dc7-4752-a896-f5d854e37457" name="ShowCategories" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b27c0898-9c55-4a58-ae22-e29264c03bde" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1d6c33b3-0189-4d5b-9d9c-a33aafbd60d3" name="payment System" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="d37c669c-8222-4079-8bb8-6d6a3f3b51a6" />
+        <ownedAttributesInternal>
+          <property Id="67f12c39-6bf6-45d2-94d1-6de75da26041" name="cash" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="346f4110-0c3a-4780-be39-fc2f1ff2e498" />
+          </property>
+          <property Id="86a88bae-1fb8-433e-a73e-2b9f8ba7998e" name="webmoney" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="33344314-0ef4-42fe-a117-68e26141218d" />
+          </property>
+          <property Id="55b754d8-4d91-4d5c-a976-189beb460f66" name="currency" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="38de96fb-885e-41c6-b8ee-4f9440525ce2" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c90684a7-8827-449c-b75a-cfbf3acbc63e" name="Buy" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e9fa22a1-aa03-4e44-b096-1260b522bb68" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5e0049a3-d7a3-4747-b469-2cbe1fa38bc0" name="product" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5ba4b0b0-5904-4af1-a3ef-bddeaa73f290" />
+        <targetEnds>
+          <association Id="bfc801dc-fd18-419e-b5e9-384c91d2cc55" isDerived="false" sourceEndRoleName="product" targetEndRoleName="Basket" isLeaf="false" isAbstract="false">
+            <classMoniker Id="816a8452-a519-401c-8b90-1bd4ca27aec8" LastKnownName="Basket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="57b04759-5fb3-4a92-a327-9c00b26a6a0e" name="product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="04fe58a3-d456-4ad9-8940-146e9a25f1ae" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="205b4ab2-769f-4d0e-b524-82841ee557ca" name="Basket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6d2622e1-de89-4d43-a4c2-2735f9c344d0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="5ecc3ec7-9082-4bae-8812-66109f9d088b" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="710de04a-18da-4589-8d6d-bd924daf5ef7" name="producer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2b31a243-177b-4acf-9676-5ae420cf2757" />
+          </property>
+          <property Id="2ed89b64-bca3-46f3-ab4e-3f96788afb97" name="information" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="58039cdb-9021-40e3-8228-719ce216a512" />
+          </property>
+          <property Id="431cddeb-d4f1-4103-93ab-55eb8f58c4fd" name="price" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="da940e57-a78e-48e3-a9e6-ed2775424562" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="f076f145-50f4-4ede-9089-aa8eaf69606b" name="AddToBasket" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="db103af5-650a-46c5-a7c6-3ae64931a871" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="816a8452-a519-401c-8b90-1bd4ca27aec8" name="Basket" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="386e45c1-8280-41bb-ab32-566a8097a498" />
+        <targetEnds>
+          <association Id="06f069db-1479-499e-b99f-db0970edd9e5" isDerived="false" sourceEndRoleName="Basket" targetEndRoleName="payment System" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1d6c33b3-0189-4d5b-9d9c-a33aafbd60d3" LastKnownName="payment System" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="53578509-9118-48b0-beca-0b78f87815cd" name="Basket" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="82b190da-855f-4189-98db-71858d88f2d7" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="32c93d4d-872b-4cf2-96b6-7e48e0a6099a" name="payment System" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="21d23ca7-9c03-4a07-a644-fc74a2a4408d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d769854e-4e12-49da-851a-2cc23222112e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="e71153d0-6cef-4bc8-ad96-fda9b87e71ec" name="product" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="75b100b8-d9e3-467d-9b4b-294bf7d9d1ee" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="ad055d85-36bf-4a7f-b19f-54dd48b0f657" name="deleteProduct" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0c84ff48-f1b9-4371-b2f7-b40cd30f0afe" />
+          </operation>
+          <operation Id="b5616135-ca1d-4615-a69c-c62ecc29a3cf" name="changeCurrency" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a57fa734-504c-48f7-9140-38a77761dacc" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="bb47ca9f-dea9-4b91-ae98-4af758ed6e71" name="user" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="34f25b67-e9bb-4246-9a20-8032ecfafee6" />
+        <targetEnds>
+          <association Id="e22fb0b3-c740-48e3-ac07-1a3cb4dfcd20" isDerived="false" sourceEndRoleName="user" targetEndRoleName="cash" isLeaf="false" isAbstract="false">
+            <classMoniker Id="816a8452-a519-401c-8b90-1bd4ca27aec8" LastKnownName="Basket" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="36cf09b2-7d17-4436-ae7e-2d512ab6c5b4" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5956abf5-cb37-408c-8697-1e8c5fe5f6f5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="0a0f442c-f768-4788-b02e-ee0dec828fa3" name="cash" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="65ed6d9b-d863-47ce-8115-982b3e2f29dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="bb14f0c6-5c67-41c8-aa1a-21de04fd9e1e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="703c1130-925b-462c-8dee-dd24d8194e2b" name="user" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ebbc8d20-8aef-4c4b-8e1c-56502661c8e3" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2f8fa78a-2b89-4a96-a1da-6bfec6a08b33" name="registration" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="158999a1-e51d-47c9-8573-7a1b69e39723" />
+          </operation>
+          <operation Id="eeb1177f-c085-4bc6-bf2d-5722c06dc9b2" name="ChangeUser" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9c5b4abd-1c28-499f-b3de-9f9a4dbae113" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="41ac6639-6848-4c3e-90ea-ed86cc5c7a9b" name="Category" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b1e0090c-8840-405d-9423-367493f661a1" />
+        <targetEnds>
+          <association Id="5c12a56b-e8fc-4ea0-af2d-ff636fe88c68" isDerived="false" sourceEndRoleName="Category" targetEndRoleName="product" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5e0049a3-d7a3-4747-b469-2cbe1fa38bc0" LastKnownName="product" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d32ab11e-3559-45a9-a45d-72d196883cac" name="Category" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="27784ae0-4f81-461e-9df2-709a5aa319fb" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1839c8bb-ab70-4b80-a01b-51890d76a0fc" name="product" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="08dbdf56-ace5-4a8d-a1fc-4489f133574f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0d7aca89-dbee-4b19-a6a8-7e05c333f7d0" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ced1f2bb-4bbd-4937-92c5-f71d1826dcfc" name="Category" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="959e6e5e-2866-4e6e-bd60-498fd875f75a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="cab3c46c-e151-49cb-a403-759c211f5617" name="Show" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b7d66c15-d37e-4d41-b423-e9decf2d957d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="9438f2c8-c6b9-49cc-b65c-4b26bb5281c6" name="ModelingProject1">
+    <elementDefinition Id="1c144e94-3ff8-4148-9819-53fc03422adb" />
+  </package>
+</logicalClassDesignerModel>
